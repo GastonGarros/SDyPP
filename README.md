@@ -1,2 +1,2 @@
 # SDyPP
-Sistemas Distribuidos
+Sistemas Distribuidos y programacion paralela
