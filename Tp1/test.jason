@@ -1,0 +1,13 @@
+[ {
+  "idFrom" : "Gaston",
+  "idTo" : "Alba",
+  "msg" : "Hola "
+}, {
+  "idFrom" : "alba",
+  "idTo" : "Gaston",
+  "msg" : "Hola prondago"
+}, {
+  "idFrom" : "Alba",
+  "idTo" : "Gaston",
+  "msg" : "prueba grabado"
+} ]
