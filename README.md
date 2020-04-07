@@ -1,2 +1,0 @@
-# SDyPP
-Sistemas Distribuidos
