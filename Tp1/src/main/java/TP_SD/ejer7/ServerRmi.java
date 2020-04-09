@@ -15,15 +15,15 @@ public class ServerRmi {
 		
 		try {
 			
-			Operaciones op = new Operaciones();
+			Control control = new Control();
 
 			Registry serveRmi = LocateRegistry.createRegistry(9900);
 			
 			System.err.println("server RMI running");
 			
-			RemoteI serviceOperaciones = (RemoteI) UnicastRemoteObject.exportObject(op,8801);
+			RemoteI serviceOperaciones = (RemoteI) UnicastRemoteObject.exportObject(control,8801);
 			
-			serveRmi.rebind("OperacionesVectores", serviceOperaciones);
+			serveRmi.rebind("OperacionesMatematicas", serviceOperaciones);
 			
 			
 		} catch (RemoteException e) {

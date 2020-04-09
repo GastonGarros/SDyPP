@@ -5,9 +5,8 @@ import java.rmi.RemoteException;
 
 public interface RemoteI extends Remote {
 	
-	public int[] restar (int[] v1, int[] v2) throws RemoteException;
-	public int[] sumar (int[] v1, int[] v2) throws RemoteException;
-	public int[] sumarError (int[] v1, int[] v2) throws RemoteException;
+	public Object run (ITarea t) throws RemoteException;
+	
 	
 
 }

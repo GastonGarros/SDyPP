@@ -1,12 +1,13 @@
 package TP_SD.ejer7;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public class Aleatorio implements ITarea {
+public class Aleatorio implements ITarea ,Serializable{
 	
+
 	
-	
-private Random random;
+private int random;
 
 
 	public Aleatorio() {
@@ -15,7 +16,7 @@ private Random random;
 	@Override
 	public Object ejecutar() {
 		// TODO Auto-generated method stub
-		return random.nextInt(1000);
+		return new Random().nextInt(1000);
 	}
 
 }
