@@ -56,7 +56,7 @@ public class Cliente
 				System.out.println("Ingrese la opcion que desea realizar");
 				System.out.println("1- Leer mensajes");
 				System.out.println("2- enviar mensajes");
-				System.out.println("3- Salir\n\n");
+				System.out.println("3- Salir\n");
 				
 				
 				texto = br.readLine();
@@ -66,13 +66,17 @@ public class Cliente
 				case 1: 
 					ArrayList<Mensaje> me =recuperarMensaje();
 					
-				//imprmimo la lista de mensajes
-						for(Mensaje m :me) {
-				
-						System.out.println("Mensaje de "+m.getIdFrom());
-						System.out.println("	Mensaje:"+m.getMsg()+"\n");
-					
+				//imprmimo la lista de mensajes o informa que no tiene ningun mensaje
+						if(me.isEmpty()) {
+							System.out.println("No posee ningun mensaje\n");
+						}else {
+							for(Mensaje m :me) {
+								System.out.println("Mensaje de "+m.getIdFrom());
+								System.out.println("	Mensaje:"+m.getMsg()+"\n");
+							
+								}
 						}
+					
 				
 					break;
 				case 2: 

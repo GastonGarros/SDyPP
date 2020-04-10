@@ -110,12 +110,7 @@ public class ServerThread implements Runnable{
 					}
 					
 			}		
-			// mostramos el mensajes del cliente por consola
-			//System.out.print("Mensaje del cliente: "+msgEntrada);
-			
-			//repetimos el mensaje al cliente
-		//	canalSalida.println(accion);
-
+		
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
